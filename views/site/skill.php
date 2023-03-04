@@ -83,7 +83,7 @@ $be = Skill::find()->where(['type' => 'be'])->orderBy(['order' => SORT_ASC])->al
                                 <div class="col-4 col-lg-4 grid-items mb-3 hidden skill-img">
                                     <div class="card mx-auto border-0">
                                         <div class="text-center">
-                                            <img class="mx-auto center mb-1" style="width:60%" alt="<?= $s['name']; ?>" src="<?= Yii::$app->request->getBaseUrl() . '/img/skills/' . $s['svg']; ?>" alt="">
+                                            <img class="mx-auto center mb-1" style="width:60%" alt="<?= $s['name']; ?>" src="<?= Utils::baseUploadsStock($s['svg']) ?>" alt="">
                                             <p class="skill-names fw-300 m-0"><?= $s['name']; ?></p>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@ $be = Skill::find()->where(['type' => 'be'])->orderBy(['order' => SORT_ASC])->al
                                 <div class="col-4 col-lg-4 grid-items mb-3 hidden skill-img">
                                     <div class="card mx-auto border-0">
                                         <div class="text-center">
-                                            <img class="mx-auto center mb-1" style="width:60%" alt="<?= $s['name']; ?>" src="<?= Yii::$app->request->getBaseUrl() . '/img/skills/' . $s['svg']; ?>" alt="">
+                                            <img class="mx-auto center mb-1" style="width:60%" alt="<?= $s['name']; ?>" src="<?= Utils::baseUploadsStock($s['svg'])  ?>" alt="">
                                             <p class="skill-names fw-300 m-0"><?= $s['name']; ?></p>
                                         </div>
                                     </div>

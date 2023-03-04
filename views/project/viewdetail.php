@@ -1,5 +1,6 @@
 <?php
 
+use app\helpers\Utils;
 use yii\helpers\Html;
 use yii\helpers\Inflector;
 use yii\widgets\DetailView;
@@ -26,7 +27,7 @@ $slug = Inflector::slug('ss');
     <hr>
     <div class="row">
         <div class="col-md-6">
-        <?= Html::img(Yii::$app->request->getBaseUrl() . '/img/project/' . $model['img'], ['style' => 'width:100%', ]);; ?>
+        <?= Html::img( Utils::baseUploadproject($model['img']), ['style' => 'width:100%', ]);; ?>
 
         </div>
         <div class="col">

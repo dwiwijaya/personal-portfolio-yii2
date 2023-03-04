@@ -7,13 +7,18 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use Yii;
 use yii\bootstrap4\Html;
 use yii\helpers\ArrayHelper;
+use yii\helpers\Url;
 use yii\web\NotFoundHttpException;
 
-class Utils{
+class Utils
+{
     const GUEST = 0;
     const ADMIN = 1;
-    
-    public static function headerSection($title = null){
+
+    const DIR = DIRECTORY_SEPARATOR;
+
+    public static function headerSection($title = null)
+    {
         return "<div class='row text-center mb-4'>
             <div class='col'>
                 <hr>
@@ -27,5 +32,14 @@ class Utils{
                 <hr>
             </div>
         </div>";
+    }
+
+    public static function baseUploadsStock($file = null)
+    {
+        return Url::base(TRUE) . self::DIR . 'img' . self::DIR . 'skills' . self::DIR . $file;
+    }
+    public static function baseUploadproject($file = null)
+    {
+        return Url::base(TRUE) . self::DIR . 'img' . self::DIR . 'project' . self::DIR . $file;
     }
 }
