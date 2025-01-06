@@ -30,7 +30,7 @@ This is a personal portfolio website project built using the [Yii2](https://www.
 
 Here’s a preview of the website:
 
-![Portfolio Website Screenshot](https://github.com/dwiwijaya/personal-portfolio-yii2/assets/screenshot.png)
+![Portfolio Website Screenshot](/assets/screenshot.png)
 
 ## Installation
 
